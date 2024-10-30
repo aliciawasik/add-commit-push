@@ -5,7 +5,8 @@ def executeCommand(cmd):
     os.system(cmd)
     print("")
 
-print("Hello World!")
+print("AddCommitPush")
+print("")
 executeCommand("git status")
 # executeCommand("git add -A")
 # executeCommand("git commit -m 'Update files.'")

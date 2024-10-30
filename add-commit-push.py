@@ -1,4 +1,5 @@
 import subprocess
 
-print("Hello, World!")
-subprocess.run("ls")
+result = subprocess.run(['ls'], capture_output=True, text=True)
+
+print("Hello World!")

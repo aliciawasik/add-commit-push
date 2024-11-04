@@ -12,6 +12,14 @@ executeCommand("git status")
 
 response=input("Would you like to AddCommitPush (y/n)? ")
 print(response)
+
+# Check if the input is not equal to "y"
+if response != "y":
+    print("You did not choose 'y'.")
+else:
+    print("You chose 'y'.")
+
+
 sys.exit()
 
 

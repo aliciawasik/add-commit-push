@@ -17,5 +17,13 @@ if response != "y":
     sys.exit()
 
 executeCommand("git add -A")
-executeCommand("git commit -m \"Update code.\"")
+
+# Check if at least one argument is provided
+if len(sys.argv) > 1:
+    # Print the first argument (index 1, since index 0 is the script name)
+    print(f"First argument: {sys.argv[1]}")
+else:
+    print("No arguments provided.")
+
+executeCommand("git commit -m \"Update files.\"")
 executeCommand("git push")
